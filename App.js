@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header';
 
 export default function App() {
   const name = "Hunter";
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your {name} app!</Text>
+      <Header name={name}/>
       <Text>🫡 </Text>
+      
       <StatusBar style="auto" />
     </View>
   );
